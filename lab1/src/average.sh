@@ -1,0 +1,8 @@
+#!/bin/bash
+count=$#
+sum=0
+for n in "$@"; do
+sum=$((sum + n))
+done
+echo "Количество: $count"
+echo "Среднее: $((sum / count))"
